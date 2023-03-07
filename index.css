@@ -1,0 +1,80 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(./assets/gradient-bg.jpg);
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0rem;
+}
+
+.playerInfo{
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 0.5rem 3rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.tic_tac_toe{
+    width: 90%;
+    max-width: 20rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    color: white;
+    aspect-ratio: 1/1;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 2rem;
+
+}
+
+.box{
+    display: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    cursor: pointer;
+    aspect-ratio: 1/1;
+}
+.box1, .box2, .box4, .box5{
+    border-right: 2px solid rgba(255, 255, 255, 1);
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+}
+.box3, .box6{
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+}
+.box7, .box8{
+    border-right: 2px solid rgba(255, 255, 255, 1);
+}
+
+.btn{
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    opacity: 0;
+}
+.active{
+    opacity: 1;
+}
+
+.win{
+    background-color: rgba(0, 255, 0, 0.3);
+}
